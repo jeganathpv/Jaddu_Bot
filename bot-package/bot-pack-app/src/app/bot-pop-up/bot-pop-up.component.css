@@ -1,0 +1,18 @@
+.bot-float{
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    width: 350px;
+    height: 500px;
+    background: skyblue;
+}
+
+.bot-head{
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    background: rgb(15, 119, 160);
+}
