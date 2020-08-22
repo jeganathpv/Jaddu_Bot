@@ -1,10 +1,20 @@
+.bot-shadow{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  border-radius: 2px;
+  margin: 1rem;
+}
+
 .bot-float{
     position: absolute;
     right: 20px;
     bottom: 30px;
     width: 350px;
     height: 500px;
-    background: skyblue;
+}
+
+.bot-grid{
+    display: grid;
+    grid-template-rows: 60px auto 50px;
 }
 
 .bot-head{
@@ -14,5 +24,79 @@
     width: 75px;
     height: 75px;
     border-radius: 50px;
-    background: rgb(15, 119, 160);
+    background: #5479f1;
 }
+
+.bot-head i{
+    font-size: 50px;
+    color: #fdfdfe;
+}
+
+.center-bot-icon{
+    margin: 13px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.bot-header{
+    background: #5479f1;
+    width: 100%;
+    color: #fdfdfe;
+    font-weight: bold;
+    height: 60px;
+}
+
+.header-contents{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bot-name{
+    padding-left: 5px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.header-close{
+    padding: 8px;
+    font-weight: lighter !important;
+}
+
+.icon{
+    font-size: 20px;
+}
+
+.bot-body{
+    color: #ffffff;
+}
+
+.bot-chat-head-reply{
+    color: #31374f;
+    background: #f3f6ff;
+}
+
+.bot-chat-head-send{
+    color: #fdfdfe;
+    background: #5479f1;
+}
+
+.bot-msg-area{
+    background: #e9e9ee;
+    color: #31374f;
+}
+
+.bot-msg-button{
+    color: #727386;
+    font-size: 18px;
+}
+
+/* Theme 1
+header - #5479f1
+body - #ffffff
+chat-head - #f3f6ff
+msg area - #e9e9ee
+button - #727386
+font1-#fdfdfe
+font2- #31374f */

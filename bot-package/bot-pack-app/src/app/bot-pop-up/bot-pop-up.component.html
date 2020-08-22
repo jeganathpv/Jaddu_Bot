@@ -1,8 +1,23 @@
-<div *ngIf="switchChathead" class="bot-float">
-  <div class="bot-header">Jaddu Bot
-        <button (click)="closeChathead()">Close</button>
+<div *ngIf="switchChathead" class="bot-float bot-shadow bot-grid">
+  <div class="bot-header">
+    <div class="header-contents">
+        <span class="bot-name">Jaddu Bot</span>
+        <i class="icon icon-cross header-close" (click)="closeChathead()"></i>
+    </div>
+  </div>
+  <div class="chat-area">
+
+  </div>
+  <div class="msg-area">
+    <div class="bot-msg-area bot-shadow">
+      <input type="text" placeholder="Type message..." [(ngModel)]="inputTextMsg">
+      <i class="icon icon-send bot-msg-button" (click)="fetchReply()"></i>
+    </div>
   </div>
 </div>
 <div *ngIf="!switchChathead" class="bot-head">
-    <button (click)="openChathead()">Open</button>
+  <div class="center-bot-icon">
+    <i class="icon icon-bubbles4" (click)="openChathead()"></i>
+  </div>
 </div>
+
