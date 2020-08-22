@@ -1,7 +1,7 @@
 .bot-shadow{
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  border-radius: 2px;
-  margin: 1rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  /* border-radius: 2px;
+  margin: 1rem; */
 }
 
 .bot-float{
@@ -46,14 +46,21 @@
     height: 60px;
 }
 
+.one-edge-shadow {
+	-webkit-box-shadow: 0 8px 6px -6px #31374f;
+	   -moz-box-shadow: 0 8px 6px -6px #31374f;
+	        box-shadow: 0 8px 6px -6px #31374f;
+}
+
 .header-contents{
     display: flex;
     justify-content: space-between;
 }
 
 .bot-name{
-    padding-left: 5px;
+    padding-left: 10px;
     font-size: 30px;
+    font-weight: normal;
     display: flex;
     align-items: center;
     height: 60px;
@@ -82,14 +89,59 @@
     background: #5479f1;
 }
 
+.msg-area{
+    padding: 0px 5px 10px 5px;
+}
+
+.msg-shadow{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
 .bot-msg-area{
     background: #e9e9ee;
     color: #31374f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    border-radius: 25px;
+    padding: 0px 15px;
+}
+
+.bot-msg-input-area{
+    float: left; 
+    width: 27.33%; 
+    margin: 40px 3%; 
+    position: relative;
+}
+
+.bot-msg-input{
+    background: transparent;
+    border: 0; 
+    padding: 7px 0; 
+    border-bottom: 1px solid #727386;
+    outline: none;
+    width: 250px;
+}
+
+.bot-msg-input ~ .focus-border{
+    position: absolute; 
+    bottom: 0; 
+    left: 50%; 
+    width: 0; 
+    height: 2px; 
+    background-color: #5479f1; 
+    transition: 0.4s;
+}
+.bot-msg-input:focus ~ .focus-border{
+    width: 250px; 
+    transition: 0.4s; 
+    left: 0;
 }
 
 .bot-msg-button{
     color: #727386;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 /* Theme 1
