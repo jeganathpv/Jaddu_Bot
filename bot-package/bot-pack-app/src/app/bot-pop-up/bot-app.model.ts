@@ -4,7 +4,6 @@ export enum UserType{
 }
 
 export interface Message{
-    User : UserType,
-    MessageTime: Date,
-    MessageText: String
+    User: UserType,
+    MessageText: String,
 }

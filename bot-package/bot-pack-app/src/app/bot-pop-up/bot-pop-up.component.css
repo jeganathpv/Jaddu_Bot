@@ -142,6 +142,30 @@
     font-size: 20px;
 }
 
+.chat-area{
+    padding-top:10px;
+}
+
+.message{
+    width: 80%;
+    margin: 3px;
+    padding: 10px 5px 10px 5px;
+}
+
+.message-user{
+    float: right;
+    background: #5479f1;
+    border-radius: 20px 20px 5px 20px; 
+    color: #fdfdfe;
+}
+
+.message-bot{
+    float: left;
+    background: #e9e9ee;
+    color: #31374f;
+    border-radius: 20px 20px 20px 5px;
+}
+
 /* Theme 1
 header - #5479f1
 body - #ffffff

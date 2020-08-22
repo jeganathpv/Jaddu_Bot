@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Message, UserType } from './bot-app.model';
 
 @Component({
   selector: 'app-bot-pop-up',
@@ -8,6 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class BotPopUpComponent implements OnInit {
 
   switchChathead: boolean = false;
+
+  inputTextMsg: String;
+
+  message: Message;
 
   constructor() { }
 
@@ -20,6 +25,16 @@ export class BotPopUpComponent implements OnInit {
 
   closeChathead(){
     this.switchChathead = false;
+  }
+
+  fetchReply(){
+    if(this.inputTextMsg){
+      this.message = {
+        User : UserType.User,
+        MessageText: this.inputTextMsg
+      }
+      this.inputTextMsg = null;
+    }
   }
 
 }
